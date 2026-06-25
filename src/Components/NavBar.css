@@ -1,0 +1,62 @@
+/* NavBar.css */
+
+.custom-navbar {
+  background-color:lightpink !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+}
+
+.brand-name {
+  color: #000000 !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-navbar .navbar-nav {
+  flex-direction: row !important;
+}
+
+.nav-link-item {
+  color: #fff !important;
+  margin: 0 15px;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.nav-link-item:hover {
+  color: #ffd700 !important;
+}
+
+.search-form {
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.search-input {
+  border-radius: 20px;
+  padding: 8px 15px;
+  min-width: 180px;
+}
+
+.search-btn {
+  border-radius: 20px;
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  color: #1a1a2e !important;
+}
+
+/* For larger screens - center the nav */
+@media (min-width: 992px) {
+  .custom-navbar .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+  }
+}
